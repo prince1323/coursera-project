@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangata gallo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header id="home-page-header">
+        <figure id="home-page-header-img">
+            <img src="assets/provided img/Asset 4@3x.png" alt="error">
+        </figure>
+    </header>
+
+    <nav id="home-page-nav">
+        <ul>
+            <li><a href="#">PLATINUM</a></li>
+            <li><a href="#">CATEGOIRIES</a></li>
+            <li><a href="#">NEW ARRIVELS</a></li>
+            <li><a href="#">PREMIUM</a></li>
+        </ul>
+        <div class="hamburger">
+            <img onclick="onClick()" id="ham-logo" src="assets/icons/icons8-hamburger-menu-24.png" alt="error">
+            <!-- <select name="dropdown" id="dropdown"> -->
+            <div class="ham-menu" id="ham-items">
+                <option value="platinum">PLATINUM</option>
+                <option value="qategories">CATEGORIES</option>
+                <option value="new arrivals">NEW ARRIVALS</option>
+                <option value="premium">PREMIUM</option>
+            </div>
+            <!-- </select> -->
+        </div>
+    </nav>
+
+    <main id="home-page-main" onscroll="hamDisapper()">
+
+        <section id="sec-1">
+            <a href="#">
+                <img src="assets/main-sect-img/christmas sale banner - Copy.jpg" alt="error">
+            </a>
+        </section>
+
+        <section id="sec-2">
+
+            <section id="sec-2-a">
+                <a href="#">
+                    <img src="assets/main-sect-img/rakhi banner.jpg" alt="error">
+                </a>
+            </section>
+
+            <section id="sec-2-b">
+                <a href="#">
+                    <img src="assets/main-sect-img/rings banner.jpg" alt="error">
+                </a>
+            </section>
+
+        </section>
+
+        <section id="sec-3">
+
+            <section id="sec-3-a">
+
+                <section id="sec-3-a-ii">
+
+                    <div id="sec-3-a-ii-1">
+                        <a href="#">
+                            <img src="assets/main-sect-img/neckles.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div id="sec-3-a-ii-2">
+                        <a href="#">
+                            <img src="assets/main-sect-img/bresllet.jpg" alt="">
+                        </a>
+                    </div>
+
+                </section>
+
+                <section id="sec-3-a-i">
+                    <a href="#">
+                        <img src="assets/main-sect-img/gems.jpg" alt="">
+                    </a>
+                </section>
+
+            </section>
+
+            <section id="sec-3-b">
+                <div id="sec-3-b-i">
+                    <a href="#">
+                        <img src="assets/main-sect-img/watches.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer id="home-page-footer">
+
+        <section id="upper-sub-footer">
+
+            <div id="upper-sub-footer-left">
+
+                <figure>
+                    <img id="comp-logo" width="200px" src="assets/provided img/Asset 1@3x.png" alt="error">
+                </figure>
+
+                <article>
+
+                    <div class="upper-sub-footer-left-cont">
+
+                        <figure>
+                            <img width="30px" src="assets/icons/address.png" alt="error">
+                        </figure>
+                        <article>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quod nulla sapiente
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Culpa, rem.
+                            </p>
+                        </article>
+
+                    </div>
+
+                    <div class="upper-sub-footer-left-cont">
+
+                        <figure>
+                            <img width="30px" src="assets/icons/mail.png" alt="error">
+                        </figure>
+                        <article>
+                            <p>abc48597@gmail.com</p>
+                        </article>
+
+                    </div>
+
+                    <div class="upper-sub-footer-left-cont">
+
+                        <figure>
+                            <img width="30px" src="assets/icons/fax.png" alt="error">
+                        </figure>
+                        <article>
+                            <p>HGERV48615@faxtore</p>
+                        </article>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div id="upper-sub-footer-right">
+
+                <div class="extra-links">
+
+                    <ul>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Help Desk</a></li>
+                        <li><a href="#">Legal Form</a></li>
+                        <li><a href="#">Authanticity</a></li>
+                        <li><a href="#">Certificte or Appriciation</a></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="extra-links">
+
+                    <ul>
+                        <li><a href="#">Time of India</a></li>
+                        <li><a href="#">Prestigiues Awards</a></li>
+                        <li><a href="#">Best Consumer Service</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="lower-sub-footer">
+
+            <figure id="footer-logo">
+                <img width="80px" src="assets/provided img/Asset 3@3x.png" alt="">
+            </figure>
+
+            <article>
+                <p>@Copywrite Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            </article>
+
+        </section>
+
+    </footer>
+
+
+    <script>
+        const ele = document.getElementById("ham-items");
+        const ham_logo = document.getElementById("ham-logo");
+
+        let flag = false;
+
+        function onClick() {
+
+            flag = !flag;
+
+            if (flag === true) {
+                ele.style.display = "block";
+            }
+            else {
+                ele.style.display = "none";
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
